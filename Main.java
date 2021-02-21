@@ -17,7 +17,8 @@ class Main {
   out.print("Enter 2nd monster's size : "); 
   size=keyboard.nextInt(); 
   Monster mTwo = new Skeleton(name, size); 
-  
+  out.println("Monster 1 - " + mOne.toString());
+  out.println("Monster 2 - " + mTwo.toString());
   if(mOne.isBigger(mTwo)==true)
   {
    out.println("Monster one is bigger than Monster two.");
@@ -29,6 +30,10 @@ class Main {
   if(mOne.namesTheSame(mTwo)==true)
   {
    out.println("Monster one has the same name as Monster two.");
+  }
+  if(!(mOne.namesTheSame(mTwo)))
+  {
+   out.println("Monster one does not have the same name as Monster two.");
   }
 }
 }
